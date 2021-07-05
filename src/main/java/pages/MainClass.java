@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.DriverFactory;
 
+import java.util.concurrent.TimeUnit;
+
 public class MainClass extends DriverFactory {
   public MainClass(WebDriver driver){
     this.wd = driver;
@@ -41,4 +43,5 @@ public class MainClass extends DriverFactory {
     Actions mouseOver = new Actions(wd);
     mouseOver.moveToElement(element).build().perform();
   }
+
 }
